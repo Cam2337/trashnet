@@ -109,6 +109,11 @@ function train(model)
 
   local params, gradParams = model:getParameters()
 
+  -- The forward eval function.
+  --
+  -- Returns:
+  --  A tuple of (loss, gradParams) from computing the forward and backward
+  --  passes, respectively.
   local feval = function(x)
     assert(x == params)
     gradParams:zero()
