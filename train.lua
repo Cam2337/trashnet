@@ -16,8 +16,8 @@ cmd:option("-trainList", "data/one-indexed-files-notrash_train.txt") -- necessar
 cmd:option("-valList", "data/one-indexed-files-notrash_val.txt") -- necessary
 cmd:option("-testList", "data/one-indexed-files-notrash_test.txt") -- necessary
 cmd:option("-numClasses", 6) -- necessary
-cmd:option("-inputHeight", "384")
-cmd:option("-inputWidth", "384")
+cmd:option("-inputHeight", "64")
+cmd:option("-inputWidth", "64")
 cmd:option("-scaledHeight", "256") -- uses original height if unprovided
 cmd:option("-scaledWidth", "256") -- uses original width if unprovided
 cmd:option("-numChannels", 3)
